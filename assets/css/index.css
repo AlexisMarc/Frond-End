@@ -1,0 +1,249 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+:root{
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #1b1b1b;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+*{
+    margin:0;
+}
+body{
+    font-family: 'Marcellus', serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+/* menu */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro);
+    font-family: "Marcellus", serif;
+    font-size: 1.3em;
+    padding: 1rem;
+}
+.item{
+    padding: 1rem;
+}
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+.login{
+    background-color: var(--azuloscuro);
+}
+.logo img{
+    width: 150px;
+}
+/* Seccion features */
+#features{
+    background: url(../img/bg-features.png);
+    background-size: 100%;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+.feature{
+    width: 20%;
+    max-width: 250px;
+    min-width: 160px;
+    margin:  2rem ;
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.feature i{
+    font-size: 2.5em;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.feature-blue{
+    background-color: rgba(0, 50, 94, 0.719);
+}
+.feature-black{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.features-description{
+    display: flex;
+    justify-content: center;
+}
+
+/* aside */
+
+#aside{
+    background: url(../img/slide1.jpg);
+    background-size: 100%;
+    color: white;
+    padding-top: 30%;
+}
+.inicio{
+    background-color: rgba(0,0,0,0.35);
+    padding: 2rem;
+    font-size: 1.5em;
+}
+.inicio h1{
+    width: 60%;
+}
+
+/* articulo con texto y imagen */
+#text{
+    margin: 3rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+#text .texto{
+    width: 60%;
+}
+/* informacion de ubicanos */
+#ubicanos {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#ubicanos .texto{
+    padding: 0.5rem;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+#ubicanos .titulo{
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+}
+#ubicanos .direccion{
+    border-bottom: solid 2px var(--azuloscuro);
+}
+#ubicanos .mapa{
+    width: 100%;
+    margin: 1rem;
+}
+/* informacion del footer */
+footer{
+    background-color: var(--negro2);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+footer .div{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+footer .div a{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+}
+footer .into{
+    padding: 1rem;
+    display: flex;
+    margin: 0.5rem;
+}
+footer .div i{
+    margin: 0.5rem;
+    font-size: 1.2em;
+}
+
+/* opiniones */
+.tarjeta{
+    margin: 2rem;
+    width: 25rem;
+    height: 13rem;
+    background-color:var(--azuloscuro);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--fondo);
+    border-radius: 5px;
+    background-image: url(../img/Group\ 200.svg);
+    background-size: 100%;
+}
+
+.tarjeta .img div{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-image: url(../img/persona.jpg);
+    background-size: 200%;
+}
+
+.tarjeta .usuario{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+    background-color: var(--);
+}
+.tarjeta .usuario h3{
+    padding-bottom: 0.5rem;
+}
+.tarjeta .usuario .user{
+    margin-left: 1.5rem;
+}
+.opinion .titulo{
+    background-color: var(--negro2);
+    color: var(--blanco);
+    padding: 2rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+}
+.opiniones{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+    background-color: var(--negro2);
+}
+.vacio{
+    height: 25rem;
+}
+/* login */
+.body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../img/slide2.png);
+}
+.body .container{
+    width: 30%;
+    height: 30rem;
+    background-color: var(--azulclaro);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
