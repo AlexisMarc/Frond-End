@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Taller 0 Maquetación Responsive</title>
+</head>
+<body class="dash">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/img/Hotelia horizontal blanco.svg">
+            <div class="name">
+                <h3>Marcos Rinćon</h3>
+                <p>marcos.rincon1903@gmail.com</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <div><i class="fa-solid fa-bed"></i><a href="#">Habitaciones</a></div>
+                <div><i class="fa-solid fa-bell-concierge"></i><a href="#">Reservas</a></div>
+                <div class="color"> <i class="fa-solid fa-bed"></i><a href="#">Habitaciones</a></div>
+                <div><i class="fa-solid fa-bell-concierge"></i><a href="#">Habitaciones</a></div>
+            </div>
+            
+        </div>
+        <div class="exit">
+            <i class="fa-solid fa-right-from-bracket"></i><a href="login.html">Cerrar sesión</a>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="bienvenido">
+            <h1>Bienvenido, Marcos Rincón</h1>
+        </div>
+        <div class="columnas">
+            <div class="foto">
+                <div class="img"><img src="assets/img/foto.jpg"></div>
+                <div class="icon">
+                    <i class="fa-solid fa-file-export"></i>
+                    <i class="fa-solid fa-file-image"></i>
+                </div>
+                <a href="#">Cambiar contraseña</a>
+            </div>
+            <form class="actualizar" action="login.html" method="post">
+                <div class="col">
+                    <div class="col-1">
+                        <div>
+                            <label for="tipo">Tipo de documento</label>
+                            <input type="text" name="nombre" placeholder="Nombre" value="Marcos Rinćon">
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" name="fecha" value="2004-03-19">
+                        </div>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" value="Marcos Alexis">
+                        </div>
+                        <div>
+                            <label for="genero">Género</label>
+                            <div id="genero">
+                                <input type="radio" name="genero" id="mujer"><label for="mujer">Mujer</label>
+                                <input type="radio" name="genero" id="hombre"><label for="hombre">Hombre</label>
+                                <input type="radio" name="genero" id="otro"><label for="otro">Otro</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="e-mail" value="marcos.rincon1903@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div>
+                            <label for="doc">Número de documento</label>
+                            <input type="number" name="doc" id="doc" value="1234567890">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" value="Rincón Buitrago">
+                        </div>
+                        <div>
+                            <label for="pais">País de origen</label>
+                            <input type="text" name="pais" id="pais" value="Colombia">
+                        </div>
+                        <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="number" name="telefono" id="telefono" value="31065976903">
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <button type="submit">Actualizar</button>
+                </div>
+            </form>
+            
+        </div>
+        <form class="password" action="dashboard.html" method="post">
+            <div class="pass">
+                <div>
+                    <label for="password">contraseña</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="truepassword">Confirmar contraseña</label>
+                    <input type="password" name="truepassword" id="truepassword">
+                </div>
+            </div>
+            <div class="botones">
+                <button type="submit">Cambiar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

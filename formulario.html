@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Taller 0 Maquetación Responsive</title>
+</head>
+<body class="dash">
+    <nav class="navreg">
+            <img src="assets/img/Hotelia horizontal blanco.svg">
+            <h1>Eres más que bienvenido</h1>
+    </nav>
+    <section class="dashboardg">
+        <div class="bienvenido">
+            <h1>Regístrate</h1>
+        </div>
+        <div class="columnas">
+            <form class="registrar" action="login.html" method="post">
+                <div class="col">
+                    <div class="col-1">
+                        <div>
+                            <label for="tipo">Tipo de documento</label>
+                            <input type="text" name="tipo" >
+                        </div>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" name="fecha" >
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="e-mail" >
+                        </div>
+                        <div>
+                            <label for="pais">País de origen</label>
+                            <input type="text" name="pais" id="pais">
+                        </div>
+                        <div>
+                            <label for="password">contraseña</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div>
+                            <label for="doc">Número de documento</label>
+                            <input type="number" name="doc" id="doc">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" >
+                        </div>
+                        <div>
+                            <label for="genero">Género</label>
+                            <div id="genero">
+                                <input type="radio" name="genero" id="mujer"><label for="mujer">Mujer</label>
+                                <input type="radio" name="genero" id="hombre"><label for="hombre">Hombre</label>
+                                <input type="radio" name="genero" id="otro"><label for="otro">Otro</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="number" name="telefono" id="telefono" >
+                        </div>
+                        <div>
+                            <label for="foto">Foto</label>
+                            <input type="file" name="foto" id="foto">
+                        </div>
+                        <div>
+                            <label for="truepassword">Confirmar contraseña</label>
+                            <input type="password" name="truepassword" id="truepassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="botonesr">
+                    <div>
+                        <input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()" />
+                        <label for="check">Acepta Terminos y Condiciones</label>
+                    </div>
+                    <button type="submit">Ingresar</button>
+                </div>
+            </form>
+            
+            <div id="content" style="display: none;">
+                contenido del div escondido<br/>
+                contenido del div escondido<br/>
+                contenido del div escondido<br/>
+            </div>
+            
+        </div>
+        
+    </section>
+    <script type="text/javascript">
+        function showContent() {
+            element = document.getElementById("content");
+            check = document.getElementById("check");
+            if (check.checked) {
+                element.style.display='block';
+            }
+            else {
+                element.style.display='none';
+            }
+        }
+    </script>
+</body>
+</html>
