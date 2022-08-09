@@ -25,14 +25,26 @@ h1,h2,h3,h4,h5{
 }
 @media only screen and (min-width: 921px) {
     /* menu */
+    /* menu */
     .nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: var(--negro);
-        font-family: "Marcellus", serif;
-        font-size: 1.3em;
+        background-color: var(--negro2);
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "logo menu";
+}
+
+    .logo {
+        grid-area: logo;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo-img menu-bars";
+        background-color: var(--negro2);
         padding: 1rem;
+    }
+    .logo img{
+        width: 200px;
     }
     .item{
         padding: 1rem;
@@ -44,12 +56,41 @@ h1,h2,h3,h4,h5{
     .login{
         background-color: var(--azuloscuro);
     }
-    .logo img{
-        width: 150px;
-    }
-    .nav .logo i{
+    .logo i{
         display: none;
     }
+    
+    .menu{
+        background-color: var(--negro2);
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-self: end;
+    }
+    
+    .menu-hr{
+        display: none;
+    }
+    
+    .item {
+        margin: 0 1rem;
+        align-self: center;
+    }
+    
+    .nav a {
+        text-align: left;
+    }
+    
+    .nav a:hover {
+        background-color: transparent;
+        color: var(--azuloscuro);
+    }
+    
+    .navbar-button {
+        background-color: var(--azuloscuro);
+        align-self: center;
+    }
+    
+    
     .nav .menu-hr{
         display: none;
     } 
@@ -62,6 +103,7 @@ h1,h2,h3,h4,h5{
         font-family: 'Marcellus', serif;
         color: var(--blanco);
     }
+    
     /* Seccion features */
     #features{
         background: url(../img/bg-features.png);
@@ -275,53 +317,87 @@ h1,h2,h3,h4,h5{
 
 /* Mobile */
 @media only screen and (max-width: 920px) {
-
-    .nav .menu .item {
-        padding: 1.5rem;
+    .nav {
+        grid-area: nav;
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "menu";
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
     }
-    
-    .nav .logo {
+    .logo {
+        grid-area: logo;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo-img menu-bars";
         background-color: var(--negro2);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 1rem;
     }
     
-    .nav .logo img {
-        width: 40%;
-        max-width: 200px;
+    .item{
+        padding: 1rem;
     }
+    .nav a{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    .login{
+        background-color: var(--azuloscuro);
+    }
+    .logo img {
+        justify-self: start;
+        width: 50%;
+        max-width: 180px;
+    }    
     
-    .nav .logo i {
+    .logo i {
+        grid-area: menu-bars;
+        justify-self: end;
         color: var(--blanco);
         font-size: 2rem;
     }
-    
-    .nav .menu {
+    .menu {
+        grid-area: menu;
+        display: grid;
         background-color: rgba(1, 10, 52, 0.838);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
-    
-    .nav .menu .menu-hr {
+    .menu-hr {
         width: 90%;
-        border-color: var(--blanco);
+        background-color: var(--blanco);
+        justify-self: center; /*para centrar el hr*/
     }
     
-    .nav .menu a {
+    .item {
+        padding: 1rem 0;
+    }
+    
+    .nav a {
         color: var(--blanco);
         text-decoration: none;
         text-align: center;
     }
     
-    .nav .menu a:hover {
+    .nav a:hover {
         background-color: #0B3860;
         width: 100%;
-    } 
+    }
     
+    .navbar-button {
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+    }
+    
+    .nav .menu-hr{
+        display: none;
+    } 
     .nav .menu .navbar-button {
         background-color: transparent;
         border: none;
@@ -331,6 +407,7 @@ h1,h2,h3,h4,h5{
         font-family: 'Marcellus', serif;
         color: var(--blanco);
     }
+    
     /* Seccion features */
     #features{
         background: url(../img/bg-features.png);
