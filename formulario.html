@@ -86,26 +86,32 @@
                     <button type="submit">Ingresar</button>
                 </div>
             </form>
-            
-            <div id="content" style="display: none;">
-                contenido del div escondido<br/>
-                contenido del div escondido<br/>
-                contenido del div escondido<br/>
-            </div>
-            
         </div>
-        
     </section>
+    <div id="modal" style="display: none;">
+        <div class="titulo">
+            <h2>Términos y Condiciones</h2>
+        </div>
+        <div class="texto">
+            <p>Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las leyes por las que nos regimos y determinados aspectos que siempre hemos creído que son ciertas. Por ello, estos Términos del Servicio ayudan a definir las relación que tiene Google contigo cuando interactúas con nuestros servicios. Por ejemplo, estos términos incluyen las siguientes secciones: <br> Qué puedes esperar de nosotros, donde se describe comó proporcionamos i desarrollamos nuestros servicios. Lo que esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios.</p>
+        </div>
+        <input type="checkbox" name="x" id="x" value="1" onchange="javascript:ocultar()">
+        <button><label for="x">Aceptar</label></button>
+    </div>
     <script type="text/javascript">
         function showContent() {
-            element = document.getElementById("content");
+            element = document.getElementById("modal");
             check = document.getElementById("check");
             if (check.checked) {
-                element.style.display='block';
+                element.style.display='flex';
             }
             else {
                 element.style.display='none';
             }
+        }
+        function ocultar() {
+            element = document.getElementById("modal");
+                element.style.display='none';
         }
     </script>
 </body>
