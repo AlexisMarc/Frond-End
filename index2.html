@@ -13,9 +13,10 @@
     <nav class="nav">
         <div class="logo">
             <img src="assets/img/Hotelia horizontal blanco.svg">
-            <i class="fa-solid fa-bars"></i>
+            <label for="check"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="check" name="check" value="1" onchange="javascript:mostrarMenu()">
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="index.html" class="item">Inicio</a>
             <a href="ubicanos.html" class="item">Ubícanos</a>
             <a href="opiniones.html" class="item">Opiniones</a>
@@ -24,7 +25,6 @@
                 <button class="navbar-button"><i class="fa-solid fa-user"></i> Iniciar Sesión</button>
             </a>
         </div>
-        
     </nav>
     <aside id="aside">
         <div class="inicio">
@@ -74,19 +74,19 @@
                         <h3>Lorem ipsum dolor</h3>
                     </div>
                 </div>
-                <div class="c feature feature-blue">
+                <div class="c c1 feature feature-blue">
                     <i class="fa-solid fa-bell-concierge"></i>
                     <h3>Lorem ipsum dolor</h3>
                 </div>
-                <div class="c feature feature-black">
+                <div class="c c2 feature feature-black">
                     <i class="fa-solid fa-dumbbell"></i>
                     <h3>Lorem ipsum dolor</h3>
                 </div>
-                <div class="c feature feature-black">
+                <div class="c c3 feature feature-black">
                     <i class="fa-solid fa-bed"></i>
                     <h3>Lorem ipsum dolor</h3>
                 </div>
-                <div class="c feature feature-blue">
+                <div class="c c4 feature feature-blue">
                     <i class="fa-solid fa-wifi"></i>
                     <h3>Lorem ipsum dolor</h3>
                 </div>
@@ -112,65 +112,78 @@
             <h1>Nuestros usuarios dicen...</h1>
         </div>
         <div class="opiniones">
-            <div class="tarjeta">
-                <div class="usuario">
-                    <div class="img">
-                        <div></div>
-                    </div>
-                    <div class="user">
-                        <h3>Diana Rodriguez</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+            <div class="carrusel">
+                <figure class="icon-cards">
+                    <div class="icon-cards__content">
+                        <div class="icon-cards__item">
+                            <div class="tarjeta">
+                                <div class="usuario">
+                                    <div class="img">
+                                        <div></div>
+                                    </div>
+                                    <div class="user">
+                                        <h3>Diana Rodriguez</h3>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio mollitia ducimus veniam quaerat voluptatibus odio facilis, architecto eos nam!</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="icon-cards__item">
+                            <div class="tarjeta">
+                                <div class="usuario">
+                                    <div class="img">
+                                        <div></div>
+                                    </div>
+                                    <div class="user">
+                                        <h3> Rodriguez</h3>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio mollitia ducimus veniam quaerat voluptatibus odio facilis, architecto eos nam!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-cards__item">
+                            <div class="tarjeta">
+                                <div class="usuario">
+                                    <div class="img">
+                                        <div></div>
+                                    </div>
+                                    <div class="user">
+                                        <h3>Diana Rodriguez</h3>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio mollitia ducimus veniam quaerat voluptatibus odio facilis, architecto eos nam!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio mollitia ducimus veniam quaerat voluptatibus odio facilis, architecto eos nam!</p>
-                </div>
-            </div>
-            <div class="tarjeta">
-                <div class="usuario">
-                    <div class="img">
-                        <div></div>
-                    </div>
-                    <div class="user">
-                        <h3>Diana Rodriguez</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio mollitia ducimus veniam quaerat voluptatibus odio facilis, architecto eos nam!</p>
-                </div>
-            </div>
-            <div class="tarjeta">
-                <div class="usuario">
-                    <div class="img">
-                        <div></div>
-                    </div>
-                    <div class="user">
-                        <h3>Diana Rodriguez</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis distinctio mollitia ducimus veniam quaerat voluptatibus odio facilis, architecto eos nam!</p>
-                </div>
+                </figure>
             </div>
         </div>
         <div class="vacio"></div>
@@ -178,12 +191,15 @@
     <footer>
         <div class="div">
             <p class="into">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quas laboriosam facere itaque dolorem atque accusamus provident dolore dignissimos consectetur?</p>
-            <div class="into">
+        </div>
+        <div class="div icons">
+            <div class="into ">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
             </div>
         </div>
+        
         <hr>
         <div class="div">
             <div class="into">
@@ -202,5 +218,19 @@
         </div>
         <hr>
     </footer>
+    
+    <script type="text/javascript">
+        function mostrarMenu(){
+            menu = document.getElementById("menu");
+            check = document.getElementById("check");
+            if (check.checked){
+                menu.style.visibility='visible';
+            }
+            else{
+                menu.style.visibility='hidden';
+            }
+        }
+
+    </script>
 </body>
 </html>
